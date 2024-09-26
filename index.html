@@ -1,10 +1,150 @@
 <!DOCTYPE html>
-<html>
-   <head>
-      <title>My Cool Website</title>
-   </head>
-   <body>
-      <h1>Welcome to my website! ⭐️</h1>
-      <p>How was your day? 🎉</p>
-   </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Company Name - IT Consulting Services</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            font-size: 1.2em;
+        }
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+        section {
+            margin: 20px;
+        }
+        h2 {
+            color: #007BFF;
+        }
+        .services, .about, .clients, .certifications, .contact {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Your Company Name</h1>
+    <p>25 Years of Expertise in Portfolio, Program & Project Management</p>
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#about">About Us</a>
+        <a href="#clients">Clients & Collaborations</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="services" class="services">
+    <h2>Our Services</h2>
+    <p>We offer a wide range of consulting services across various industries, specializing in:</p>
+    <ul>
+        <li><strong>Portfolio, Program & Project Management</strong> - Managing complex projects and portfolios with precision.</li>
+        <li><strong>Contracts, Budget & Resource Management</strong> - Ensuring efficient allocation of resources and managing budgets.</li>
+        <li><strong>Quality, KPIs/SLAs & Risk Management</strong> - Delivering consistent quality through risk mitigation strategies.</li>
+        <li><strong>Business, Functional & Process Analysis</strong> - Streamlining processes and improving business functionality.</li>
+        <li><strong>End-to-End SDLC Solutions</strong> - From planning to deployment, we cover the full software development lifecycle.</li>
+    </ul>
+</section>
+
+<section id="about" class="about">
+    <h2>About Us</h2>
+    <p>With over 25 years of experience, we provide IT consulting services to International Organizations, European Commission, Telecoms, Banking, and Insurance sectors. We’ve established long-term collaborations with service providers in the Green and European markets, offering innovative solutions across the full spectrum of project and resource management.</p>
+</section>
+
+<section id="clients" class="clients">
+    <h2>Clients & Collaborations</h2>
+    <p>We have partnered with key industry players across various sectors including:</p>
+    <ul>
+        <li>Telecoms</li>
+        <li>Banking</li>
+        <li>Insurance</li>
+        <li>European Commission</li>
+        <li>Green Technologies & European Market Competitors</li>
+    </ul>
+    <p>Our success is built on strong, long-term collaborations that drive mutual growth and innovation.</p>
+</section>
+
+<section id="certifications" class="certifications">
+    <h2>Certifications</h2>
+    <p>Our team holds several globally recognized certifications, ensuring high standards in project management and consulting:</p>
+    <ul>
+        <li>P3O (Certified)</li>
+        <li>PM² (Certified)</li>
+        <li>PRINCE2 (Certified)</li>
+        <li>SAFe® 6 Agilist (Certified)</li>
+    </ul>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name">
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your Email">
+        
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Your Message"></textarea>
+        
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2024 Your Company Name | All Rights Reserved</p>
+</footer>
+
+</body>
 </html>
