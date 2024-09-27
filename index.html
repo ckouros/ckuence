@@ -30,11 +30,14 @@
             color: white;
             padding: 20px 0;
             text-align: center;
+            display: flex;  /* Align items side by side */
+            align-items: center;  /* Vertically center logo and text */
+            justify-content: center;  /* Center the content */
         }
 
         header img {
             width: 150px;
-            margin-bottom: 10px;
+            margin-right: 20px;  /* Add spacing between logo and title */
         }
 
         header h1 {
@@ -139,8 +142,10 @@
 
 <header>
     <img src="/path-to-logo/A_modern,_sleek,_and_professional_logo_for_the_com.png" alt="CKuence Logo"> <!-- Replace with the correct logo path -->
-    <h1>CKuence</h1>
-    <p>Expertise in IT Management, Design & Consulting Services</p>
+    <div>
+        <h1>CKuence</h1>
+        <p>Technology & Consulting</p>
+    </div>
 </header>
 
 <nav>
