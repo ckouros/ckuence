@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CKuence - Technology & Consulting</title>
+    <link href="https://fonts.googleapis.com/css2?family=AERE:wght@400&display=swap" rel="stylesheet">
     <style>
         /* Basic Reset */
         * {
@@ -17,23 +18,24 @@
             font-family: 'Arial', sans-serif;
             color: #333;
             line-height: 1.6;
-            background-color: #d1c9a4; /* Olive oil background color */
+            background-color: #f4f4f4; /* Previous neutral background color */
         }
 
         a {
-            color: #697c37; /* Olive green for links */
+            color: #3498db; /* Link color */
             text-decoration: none;
         }
 
         header {
-            background: #8b7d4b; /* Darker olive green for header */
+            background: #2c3e50; /* Dark blue-gray for header */
             color: white;
             padding: 30px 0;
             text-align: center;
         }
 
         header h1 {
-            font-size: 2.5em;
+            font-family: 'AERE', sans-serif; /* Font for CKuence title */
+            font-size: 3em;
             margin-bottom: 5px;
         }
 
@@ -44,7 +46,7 @@
         nav {
             margin: 20px 0;
             text-align: center;
-            background-color: #697c37;
+            background-color: #3498db; /* Blue for navigation */
         }
 
         nav a {
@@ -57,7 +59,7 @@
         }
 
         nav a:hover {
-            background-color: #5b6b2d; /* Darker olive green for hover */
+            background-color: #2980b9; /* Darker blue for hover */
             border-radius: 5px;
         }
 
@@ -65,13 +67,13 @@
             max-width: 1200px;
             margin: 40px auto;
             padding: 20px;
-            background-color: #e6e2b5; /* Lighter olive for sections */
+            background-color: #fff; /* White background for sections */
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         h2 {
-            color: #697c37;
+            color: #2c3e50;
             margin-bottom: 15px;
         }
 
@@ -84,7 +86,7 @@
 
         .intro {
             text-align: center;
-            background-color: #8b7d4b; /* Softer olive for intro background */
+            background-color: #34495e; /* Softer gray-blue for intro background */
             color: white;
         }
 
@@ -97,13 +99,13 @@
         .services div {
             flex: 1 1 30%; /* Making the service boxes into 3 columns */
             padding: 20px;
-            background-color: #d7d3b2; /* Darker olive variation for service boxes */
+            background-color: #ecf0f1; /* Light gray for service boxes */
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         .about {
-            background-color: #e9e5c5; /* Lighter olive background for About Us */
+            background-color: #f8f9fa; /* Lighter background for About Us */
         }
 
         .contact-form input, .contact-form textarea {
@@ -117,7 +119,7 @@
 
         .contact-form button {
             padding: 15px 30px;
-            background-color: #697c37;
+            background-color: #3498db;
             color: white;
             border: none;
             border-radius: 5px;
@@ -127,14 +129,19 @@
         }
 
         .contact-form button:hover {
-            background-color: #5b6b2d;
+            background-color: #2980b9;
         }
 
         footer {
-            background-color: #697c37;
+            background-color: #2c3e50;
             color: white;
             text-align: center;
             padding: 20px 0;
+        }
+
+        /* Add space between Services title and boxes */
+        .services h2 {
+            margin-bottom: 60px;
         }
     </style>
 </head>
@@ -194,4 +201,16 @@
         <label for="email">Email</label>
         <input type="email" id="email" name="email" placeholder="Your Email" required>
         
-        <label for="message
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+        
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2024 CKuence | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
