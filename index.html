@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CKuence - IT Consulting Services</title>
+    <title>CKuence - Technology & Consulting</title>
     <style>
         /* Basic Reset */
         * {
@@ -15,9 +15,10 @@
         /* Fonts and Colors */
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f7f4e3; /* Olive oil light background */
             color: #333;
             line-height: 1.6;
+            background: url('https://your-image-link.com/background.jpg') no-repeat center center fixed; /* Replace with actual image */
+            background-size: cover;
         }
 
         a {
@@ -26,18 +27,10 @@
         }
 
         header {
-            background: #697c37; /* Olive green for header */
+            background: rgba(105, 124, 55, 0.8); /* Olive green with opacity */
             color: white;
-            padding: 20px 0;
+            padding: 30px 0;
             text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        header img {
-            width: 150px;
-            margin-right: 20px;
         }
 
         header h1 {
@@ -73,6 +66,9 @@
             max-width: 1200px;
             margin: 40px auto;
             padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         h2 {
@@ -81,7 +77,6 @@
         }
 
         .intro, .services, .about, .contact {
-            background-color: #f9f6e9; /* Lighter olive section background */
             padding: 30px;
             border-radius: 10px;
             margin-bottom: 40px;
@@ -90,7 +85,8 @@
 
         .intro {
             text-align: center;
-            background-color: #e6e4d0; /* Softer olive for intro background */
+            background-color: rgba(105, 124, 55, 0.8); /* Softer olive for intro background */
+            color: white;
         }
 
         .services {
@@ -146,22 +142,23 @@
 <body>
 
 <header>
-    <img src="/path-to-logo/A_modern,_sleek,_and_professional_logo_for_the_com.png" alt="CKuence Logo">
-    <div>
-        <h1>CKuence</h1>
-        <p>Technology & Consulting</p>
-    </div>
+    <h1>CKuence</h1>
+    <p>Technology & Consulting</p>
+    <p>Specialized in providing tailored IT solutions with innovative management, design, and consulting services.</p>
 </header>
 
 <nav>
+    <a href="#about">About CKuence</a>
     <a href="#services">Services</a>
-    <a href="#about">About Us</a>
     <a href="#contact">Contact Us</a>
 </nav>
 
-<section class="intro">
-    <h2>Welcome to CKuence IT Consulting</h2>
-    <p>Specialized in providing tailored IT solutions with innovative management, design, and consulting services.</p>
+<section id="about" class="about">
+    <h2>About CKuence</h2>
+    <p>With over 25 years of professional experience, we provide IT consulting, management, and design services to international organizations, European Institutions & Agencies, Public Sector, and industries like Chemicals, Telecoms, Banking, and Insurance. Our long-term collaborations with major competitors in the Greek and European market set us apart in delivering high-value solutions.</p>
+
+    <h2>Certifications</h2>
+    <p>P3O (Certified), PM² (Certified), PRINCE2 (Certified), SAFe® 6 Agilist (Certified)</p>
 </section>
 
 <section id="services" class="services">
@@ -190,14 +187,6 @@
         <h3>Operational Excellence Principles</h3>
         <p>Adopting best practices to promote operational efficiency, continuous improvement, and excellence in all business processes.</p>
     </div>
-</section>
-
-<section id="about" class="about">
-    <h2>About Us</h2>
-    <p>With over 25 years of professional experience, we provide IT consulting, management, and design services to international organizations, European Institutions & Agencies, Public Sector, and industries like Chemicals, Telecoms, Banking, and Insurance. Our long-term collaborations with major competitors in the Greek and European market set us apart in delivering high-value solutions.</p>
-
-    <h2>Certifications</h2>
-    <p>P3O (Certified), PM² (Certified), PRINCE2 (Certified), SAFe® 6 Agilist (Certified)</p>
 </section>
 
 <section id="contact" class="contact">
