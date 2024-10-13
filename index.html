@@ -12,32 +12,32 @@
             box-sizing: border-box;
         }
 
-        /* Fonts and Color Palette */
+        /* Fonts and Colors */
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f0f4f8; /* Light blue background for modern look */
+            background-color: #f7f4e3; /* Olive oil light background */
             color: #333;
             line-height: 1.6;
         }
 
         a {
-            color: #1A73E8; /* Matching link color to blue palette */
+            color: #697c37; /* Olive green for links */
             text-decoration: none;
         }
 
         header {
-            background: #1A73E8; /* Updated to match the blue from the logo */
+            background: #697c37; /* Olive green for header */
             color: white;
             padding: 20px 0;
             text-align: center;
-            display: flex;  /* Align items side by side */
-            align-items: center;  /* Vertically center logo and text */
-            justify-content: center;  /* Center the content */
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         header img {
             width: 150px;
-            margin-right: 20px;  /* Add spacing between logo and title */
+            margin-right: 20px;
         }
 
         header h1 {
@@ -52,7 +52,7 @@
         nav {
             margin: 20px 0;
             text-align: center;
-            background-color: #1A73E8;
+            background-color: #697c37;
         }
 
         nav a {
@@ -65,7 +65,7 @@
         }
 
         nav a:hover {
-            background-color: #1558a8; /* Darker blue for hover effect */
+            background-color: #5b6b2d; /* Darker olive green for hover */
             border-radius: 5px;
         }
 
@@ -76,12 +76,12 @@
         }
 
         h2 {
-            color: #1A73E8;
+            color: #697c37;
             margin-bottom: 15px;
         }
 
-        .intro, .services, .about, .clients, .certifications, .contact {
-            background-color: white;
+        .intro, .services, .about, .contact {
+            background-color: #f9f6e9; /* Lighter olive section background */
             padding: 30px;
             border-radius: 10px;
             margin-bottom: 40px;
@@ -90,20 +90,25 @@
 
         .intro {
             text-align: center;
-            background-color: #E3F2FD; /* Soft light blue intro background */
+            background-color: #e6e4d0; /* Softer olive for intro background */
         }
 
-        .services ul, .clients ul, .certifications ul {
-            list-style: none;
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
         }
 
-        .services ul li, .clients ul li, .certifications ul li {
-            padding: 10px 0;
-            border-bottom: 1px solid #f0f0f0;
+        .services div {
+            flex: 1 1 300px;
+            padding: 20px;
+            background-color: #d7d3b2; /* Darker olive variation */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        .services ul li:last-child, .clients ul li:last-child, .certifications ul li:last-child {
-            border-bottom: none;
+        .about {
+            background-color: #e9e5c5; /* Lighter olive background for About Us */
         }
 
         .contact-form input, .contact-form textarea {
@@ -117,7 +122,7 @@
 
         .contact-form button {
             padding: 15px 30px;
-            background-color: #1A73E8;
+            background-color: #697c37;
             color: white;
             border: none;
             border-radius: 5px;
@@ -127,11 +132,11 @@
         }
 
         .contact-form button:hover {
-            background-color: #1558a8;
+            background-color: #5b6b2d;
         }
 
         footer {
-            background-color: #1A73E8;
+            background-color: #697c37;
             color: white;
             text-align: center;
             padding: 20px 0;
@@ -141,7 +146,7 @@
 <body>
 
 <header>
-    <img src="/path-to-logo/A_modern,_sleek,_and_professional_logo_for_the_com.png" alt="CKuence Logo"> <!-- Replace with the correct logo path -->
+    <img src="/path-to-logo/A_modern,_sleek,_and_professional_logo_for_the_com.png" alt="CKuence Logo">
     <div>
         <h1>CKuence</h1>
         <p>Technology & Consulting</p>
@@ -151,52 +156,48 @@
 <nav>
     <a href="#services">Services</a>
     <a href="#about">About Us</a>
-    <a href="#clients">Clients</a>
-    <a href="#certifications">Certifications</a>
     <a href="#contact">Contact Us</a>
 </nav>
 
 <section class="intro">
     <h2>Welcome to CKuence IT Consulting</h2>
-    <p>We specialize in providing tailored IT consulting solutions, with over 25 years of experience working with international organizations, European markets, and key industries such as Telecoms, Banking, and Insurance.</p>
-    <p>Let us help you achieve your goals with innovative management, design, and consulting strategies.</p>
+    <p>Specialized in providing tailored IT solutions with innovative management, design, and consulting services.</p>
 </section>
 
 <section id="services" class="services">
     <h2>Our Services</h2>
-    <ul>
-        <li><strong>Portfolio, Program & Project Management</strong> - Expert management of projects and portfolios to achieve your business goals.</li>
-        <li><strong>Contracts, Budget & Resource Management</strong> - Efficient resource allocation and contract optimization.</li>
-        <li><strong>Quality, KPIs/SLAs & Risk Management</strong> - Ensuring top-notch quality control with our risk management expertise.</li>
-        <li><strong>Business, Functional & Process Analysis</strong> - Comprehensive analysis to improve business processes and user experience.</li>
-        <li><strong>End-to-End SDLC Solutions</strong> - We provide complete solutions from planning to development and deployment.</li>
-    </ul>
+    <div>
+        <h3>Business Analysis, UI/UX Design & Consulting</h3>
+        <p>We provide comprehensive analysis, UI/UX design, and consulting services to improve business performance and user engagement.</p>
+    </div>
+    <div>
+        <h3>Portfolio, Program & Project Management</h3>
+        <p>Expert management of projects and portfolios to achieve your business goals efficiently and effectively.</p>
+    </div>
+    <div>
+        <h3>Contracts, Budget & Resource Management</h3>
+        <p>Efficient allocation of resources and optimization of contracts and budgets for sustainable growth.</p>
+    </div>
+    <div>
+        <h3>Quality, KPIs/SLAs & Risk Management</h3>
+        <p>Ensuring top-notch quality and performance with a focus on KPIs, SLAs, and effective risk management strategies.</p>
+    </div>
+    <div>
+        <h3>End-to-End SDLC Solutions</h3>
+        <p>Providing complete solutions from planning to development, testing, and deployment, ensuring end-to-end delivery.</p>
+    </div>
+    <div>
+        <h3>Operational Excellence Principles</h3>
+        <p>Adopting best practices to promote operational efficiency, continuous improvement, and excellence in all business processes.</p>
+    </div>
 </section>
 
 <section id="about" class="about">
     <h2>About Us</h2>
-    <p>With over 25 years of professional experience, we provide IT consulting, management, and design services to international organizations, the European Commission, and industries like Telecoms, Banking, and Insurance. Our long-term collaborations with major competitors in the Green and European market set us apart in delivering high-value solutions.</p>
-</section>
+    <p>With over 25 years of professional experience, we provide IT consulting, management, and design services to international organizations, European Institutions & Agencies, Public Sector, and industries like Chemicals, Telecoms, Banking, and Insurance. Our long-term collaborations with major competitors in the Greek and European market set us apart in delivering high-value solutions.</p>
 
-<section id="clients" class="clients">
-    <h2>Clients & Collaborations</h2>
-    <ul>
-        <li>Telecom Industry</li>
-        <li>Banking Sector</li>
-        <li>Insurance Sector</li>
-        <li>European Commission</li>
-        <li>Green Market Competitors</li>
-    </ul>
-</section>
-
-<section id="certifications" class="certifications">
     <h2>Certifications</h2>
-    <ul>
-        <li>P3O (Certified)</li>
-        <li>PM² (Certified)</li>
-        <li>PRINCE2 (Certified)</li>
-        <li>SAFe® 6 Agilist (Certified)</li>
-    </ul>
+    <p>P3O (Certified), PM² (Certified), PRINCE2 (Certified), SAFe® 6 Agilist (Certified)</p>
 </section>
 
 <section id="contact" class="contact">
