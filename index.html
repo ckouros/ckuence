@@ -18,7 +18,7 @@
             font-family: 'Arial', sans-serif;
             color: #333;
             line-height: 1.6;
-            background-color: #f4f4f4; /* Previous neutral background color */
+            background-color: #f4f4f4;
         }
 
         a {
@@ -27,14 +27,14 @@
         }
 
         header {
-            background: #2c3e50; /* Dark blue-gray for header */
+            background: #2c3e50;
             color: white;
             padding: 30px 0;
             text-align: center;
         }
 
         header h1 {
-            font-family: 'AERE', sans-serif; /* Font for CKuence title */
+            font-family: 'AERE', sans-serif;
             font-size: 3em;
             margin-bottom: 5px;
         }
@@ -46,7 +46,7 @@
         nav {
             margin: 20px 0;
             text-align: center;
-            background-color: #3498db; /* Blue for navigation */
+            background-color: #3498db;
         }
 
         nav a {
@@ -59,7 +59,7 @@
         }
 
         nav a:hover {
-            background-color: #2980b9; /* Darker blue for hover */
+            background-color: #2980b9;
             border-radius: 5px;
         }
 
@@ -67,7 +67,7 @@
             max-width: 1200px;
             margin: 40px auto;
             padding: 20px;
-            background-color: #fff; /* White background for sections */
+            background-color: #fff;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
@@ -86,7 +86,7 @@
 
         .intro {
             text-align: center;
-            background-color: #34495e; /* Softer gray-blue for intro background */
+            background-color: #34495e;
             color: white;
         }
 
@@ -97,39 +97,43 @@
         }
 
         .services div {
-            flex: 1 1 30%; /* Making the service boxes into 3 columns */
+            flex: 1 1 30%;
             padding: 20px;
-            background-color: #ecf0f1; /* Light gray for service boxes */
+            background-color: #ecf0f1;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         .about {
-            background-color: #f8f9fa; /* Lighter background for About Us */
+            background-color: #f8f9fa;
         }
 
-        .contact-form input, .contact-form textarea {
-            width: 100%;
-            padding: 15px;
+        .contact {
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 0;
+        }
+
+        .contact-info {
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+        .contact-info h3 {
+            margin-bottom: 20px;
+            font-size: 1.4em;
+        }
+
+        .contact-info img {
+            width: 150px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .contact-info p {
             margin: 10px 0;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-            font-size: 1.1em;
-        }
-
-        .contact-form button {
-            padding: 15px 30px;
-            background-color: #3498db;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            font-size: 1.1em;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .contact-form button:hover {
-            background-color: #2980b9;
         }
 
         footer {
@@ -137,11 +141,6 @@
             color: white;
             text-align: center;
             padding: 20px 0;
-        }
-
-        /* Add space between Services title and boxes */
-        .services h2 {
-            margin-bottom: 60px;
         }
     </style>
 </head>
@@ -156,7 +155,7 @@
 <nav>
     <a href="#about">About CKuence</a>
     <a href="#services">Services</a>
-    <a href="#contact">Contact Us</a>
+    <a href="#contact">Contact</a>
 </nav>
 
 <section id="about" class="about">
@@ -193,19 +192,13 @@
 </section>
 
 <section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <form class="contact-form">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Your Name" required>
-        
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Your Email" required>
-        
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
-        
-        <button type="submit">Send Message</button>
-    </form>
+    <div class="contact-info">
+        <img src="/mnt/data/contact ckuence.PNG" alt="Map of Athens" />
+        <h3>Contact Information</h3>
+        <p><strong>Location:</strong> Athens, Greece</p>
+        <p><strong>Email:</strong> info@ckuence.gr</p>
+        <p><strong>Tel:</strong> +30 6936 923 170</p>
+    </div>
 </section>
 
 <footer>
