@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CKuence - Technology & Consulting</title>
+    <title>CKuence - IT Consulting</title>
     <link href="https://fonts.googleapis.com/css2?family=AERE:wght@400&display=swap" rel="stylesheet">
     <style>
         /* Basic Reset */
@@ -91,13 +91,12 @@
         }
 
         .services {
-            display: flex;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
             gap: 20px;
         }
 
         .services div {
-            flex: 1 1 30%;
             padding: 20px;
             background-color: #ecf0f1;
             border-radius: 10px;
@@ -114,26 +113,12 @@
             justify-content: center;
             align-items: center;
             padding: 30px 0;
-        }
-
-        .contact-info {
             text-align: center;
-            font-size: 1.2em;
-        }
-
-        .contact-info h3 {
-            margin-bottom: 20px;
-            font-size: 1.4em;
-        }
-
-        .contact-info img {
-            width: 150px;
-            height: auto;
-            margin-bottom: 15px;
         }
 
         .contact-info p {
             margin: 10px 0;
+            font-size: 1.2em;
         }
 
         footer {
@@ -148,7 +133,6 @@
 
 <header>
     <h1>CKuence</h1>
-    <p>Technology & Consulting</p>
     <p>Specialized in providing tailored IT solutions with innovative management, design, and consulting services.</p>
 </header>
 
@@ -170,6 +154,10 @@
         <p>We provide comprehensive analysis, UI/UX design, and consulting services to improve business performance and user engagement.</p>
     </div>
     <div>
+        <h3>End-to-End SDLC Solutions</h3>
+        <p>Providing complete solutions from planning to development, testing, and deployment, ensuring end-to-end delivery.</p>
+    </div>
+    <div>
         <h3>Portfolio, Program & Project Management</h3>
         <p>Expert management of projects and portfolios to achieve your business goals efficiently and effectively.</p>
     </div>
@@ -182,10 +170,6 @@
         <p>Ensuring top-notch quality and performance with a focus on KPIs, SLAs, and effective risk management strategies.</p>
     </div>
     <div>
-        <h3>End-to-End SDLC Solutions</h3>
-        <p>Providing complete solutions from planning to development, testing, and deployment, ensuring end-to-end delivery.</p>
-    </div>
-    <div>
         <h3>Operational Excellence Principles</h3>
         <p>Adopting best practices to promote operational efficiency, continuous improvement, and excellence in all business processes.</p>
     </div>
@@ -193,8 +177,7 @@
 
 <section id="contact" class="contact">
     <div class="contact-info">
-        <img src="/mnt/data/contact ckuence.PNG" alt="Map of Athens" />
-        <h3>Contact Information</h3>
+        <h2>Contact</h2>
         <p><strong>Location:</strong> Athens, Greece</p>
         <p><strong>Email:</strong> info@ckuence.gr</p>
         <p><strong>Tel:</strong> +30 6936 923 170</p>
